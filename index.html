@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link type="text/css" href="desktop.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="desktop.js"></script>
+</head>
+
+<body onload="onLoad()">
+    <div id="main">
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#Programs">Programs</a>
+            <a href="#Documents" onclick="openWindow('Documents')">Documents</a>
+            <a href="#Help">Help</a>
+        </div>
+        <div id="startBar">
+                <div id="myTime"><span class="date" id='Date'><script>document.write(new Date(Date.now()).getHours());</script>:<script>document.write(new Date(Date.now()).getMinutes()<10?'0':'' + new Date(Date.now()).getMinutes())</script></span></div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Start</button>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
