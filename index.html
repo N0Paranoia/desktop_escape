@@ -15,7 +15,7 @@
             <a href="#Help">Help</a>
         </div>
         <div id="startBar">
-                <div id="myTime"><span class="date" id='Date'><script>document.write(new Date(Date.now()).getHours());</script>:<script>document.write(new Date(Date.now()).getMinutes()<10?'0':'' + new Date(Date.now()).getMinutes())</script></span></div>
+                <div id="myTime"><span class="date" id='Date'><script>document.write(new Date(Date.now()).getHours());</script>:<script>document.write(new Date(Date.now()).getMinutes()<10? "0"+new Date(Date.now()).getMinutes(): ""+new Date(Date.now()).getMinutes())</script></span></div>
             <div class="dropdown">
                 <button onclick="myFunction()" class="dropbtn">Start</button>
             </div>
